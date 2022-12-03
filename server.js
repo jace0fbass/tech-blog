@@ -6,8 +6,7 @@ const helpers = require ('./utils/helpers')
 const session = require('express-session')
 
 const sequelize = require('./config/connection')
-
-// Reliably stores session
+// Stores session
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express()
@@ -16,25 +15,26 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers })
 
 // TODO: configure the session
-// const sess = {
-//     secret: 'Super secret secret',
-//     cookie: {},
-//     resave: false,
-//     saveUninitialized: true,
-//     store: new SequelizeStore({
-//       db: sequelize
-//     })
-//   };
+const sess = {
+    secret: 'process.env.SESSION_SECRET',
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+      db: sequelize
+    })
+  };
   
-  // TODO: Get access to cookie ID
-  app.use(session(sess));
+// TODO: Get access to cookie ID
+app.use(session(sess));
 
 app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars')
+app.set('views', './views')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static('public'))
 
 app.use(routes)
 
