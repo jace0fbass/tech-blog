@@ -3,14 +3,32 @@
 *::after {
   box-sizing: border-box;
 }
-
+body {
+  background-color: #1b89bca3;
+}
 h2, h3, h5, p {
     text-align: center;
 }
 
 h2 {
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 80px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+ h4 {
+  font-size: 25px;
+ }
+h5 {
+  font-size:25px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 nav {
@@ -63,7 +81,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem;
-  line-height: 1.25;
+
 }
 
 h1 {
@@ -105,24 +123,26 @@ a:hover {
   text-decoration: none;
   font-size: 1rem;
   border-radius: 0.3rem;
-  border: 1px solid transparent;
+  border: 1px solid ;
   outline: none;
   color: #1a1a1a;
-  background-color: #aeaeae;
+  background-color: #aeaeaea1;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #cecece;
+  background-color: #2d3e50;
+  color: #aeaeae;
 }
 
 .btn.btn-black:hover {
-  background-color: #666666;
+  background-color: #666666ad;
 }
 
 .btn.btn-link {
   background-color: #1b89bc;
   color: #ffffff;
+  
 }
 
 .btn.btn-link:hover {
@@ -142,6 +162,7 @@ a:hover {
 
 .card .card-body {
   padding: 0.375rem;
+  background-color: rgba(255, 254, 254, 0.686);
 }
 
 .card .card-footer {
