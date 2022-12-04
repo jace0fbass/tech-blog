@@ -1,46 +1,8 @@
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-h2, h3, h5, p {
-    text-align: center;
-}
-
-h2 {
-    margin-top: 10px;
-    font-size: 2rem;
-}
-
-nav {
-    padding: 0.375rem;
-    background-color: #2d3e50;
-    color: #d9e9e8;
-}
-
-.nav-item {
-    text-align: center;
-    
-}
-
-.nav-link {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.old-posts {
-    display: flex;
-    justify-content: center;
-}
-
-#blogz {
-    margin:20px;
-}
-
-.blogLink {
-    display: flex;
-    justify-content: center;
 }
 
 html,
@@ -70,6 +32,26 @@ h1 {
   font-size: 2.25rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 1.1rem;
   margin: 0 0 1rem;
@@ -87,6 +69,13 @@ label {
   display: inline-block;
 }
 
+input,
+select,
+textarea,
+button {
+  margin: 0;
+}
+
 a {
   color: #1b89bc;
   text-decoration: none;
@@ -95,6 +84,27 @@ a {
 a:hover {
   color: #065b83;
   text-decoration: underline;
+}
+
+/* DISPLAY */
+.display-none {
+  display: none !important;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.display-inline-block {
+  display: inline-block !important;
+}
+
+.display-inline {
+  display: inline !important;
+}
+
+.display-flex {
+  display: flex !important;
 }
 
 .btn {
@@ -115,6 +125,8 @@ a:hover {
 .btn:hover {
   background-color: #cecece;
 }
+
+
 
 .btn.btn-black:hover {
   background-color: #666666;
@@ -157,6 +169,37 @@ a:hover {
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
+form {
+  width: 100%;
+}
+
+form .form-group {
+  display: block;
+  width: 100%;
+  margin: 0.625rem 0;
+}
+
+form .form-input,
+form .form-textarea {
+  display: block;
+}
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+form label,
+form .form-label {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0.625rem 0 0.25rem 0.3rem;
+}
+
 form .form-input {
   width: 100%;
   padding: 0.75rem;
@@ -166,6 +209,20 @@ form .form-input {
   font-size: 1.2rem;
   border: 1px solid #484848;
   border-radius: 0.3rem;
+}
+
+form .form-input.form-input-squared {
+  border-radius: 0;
+}
+
+form [type='checkbox'],
+form [type='radio'] {
+  display: inline-block;
+}
+
+label form [type='checkbox'], label
+form [type='radio'] {
+  display: inline-block;
 }
 
 .container {
