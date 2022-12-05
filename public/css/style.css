@@ -52,6 +52,11 @@ nav {
     justify-content: center;
 }
 
+#hiddenPosts {
+display: flex;
+justify-content: center;
+}
+
 #blogz {
     margin:20px;
 }

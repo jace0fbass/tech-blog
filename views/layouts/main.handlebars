@@ -19,8 +19,8 @@
           <section class="navbar-nav">
             <div class="nav-item">
               <a class="nav-link" aria-current="page" href="/">Home</a>
-              <a class="nav-link" aria-current="page" href="/posts">Posts</a>
-            <a class="nav-link" aria-current="page" href="/posts">Donate</a>
+              <a class="nav-link" aria-current="page" href="/login">Posts</a>
+            <a class="nav-link" aria-current="page" href="/login">Donate</a>
               {{#if logged_in}}
                 <a class="nav-link" href="/logout" id="logout">Log out</a>
               {{else}}
@@ -64,9 +64,6 @@
     <a class="blogLink" href="#">Continue reading</a>
   </div>
 </div>
-
-
-
             </section>
 
     <main class="container">
@@ -74,6 +71,45 @@
     </main>
 
     {{#if logged_in}}
+    <center>
+      <section id="hiddenPosts">
+<div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h5 class="card-title">The top five frameworks to make you appear taller.</h5>
+    <p class="card-text">Time and time again programmers tell me the same thin.....</p>
+    <a class="blogLink" href="#">Continue reading</a>
+  </div>
+</div>
+
+<div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h5 class="card-title">ES-QUE-EL vs Sequel: The debate is settled. </h5>
+    <p class="card-text">Why do people who say sqirrel smell like wet gara.....</p>
+    <a class="blogLink" href="#">Continue reading</a>
+  </div>
+</div>
+
+<div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h5 class="card-title">Awesome Christmas gifts for Programmers 2022</h5>
+    <p class="card-text">New for 2022! blueblocker contacts are setti.....</p>
+    <a class="blogLink" href="#">Continue reading</a>
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+
+
+</center>
+
       <script src="/js/logout.js"></script>
     {{/if}}
 
