@@ -7,7 +7,7 @@ const logout = async () => {
 
   if (response.ok) {
     // If successfully logged out, redirect to the login page
-    document.location.replace('/index.handlebars');
+    document.location.replace('/login');
   } else {
     alert(response.statusText);
   }
