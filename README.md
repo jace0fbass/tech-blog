@@ -1,7 +1,7 @@
 # 14 Model-View-Controller (MVC): Tech Blog
 
 ## Deployed link
-
+https://tekblog-app.herokuapp.com/login
 
 ## Description
 In this challenge I have created an application where users will create profiles and then be able to read and create blog posts about technology. 
