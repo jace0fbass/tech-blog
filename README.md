@@ -1,5 +1,27 @@
 # 14 Model-View-Controller (MVC): Tech Blog
 
+## Deployed link
+
+
+## Description
+In this challenge I have created an application where users will create profiles and then be able to read and create blog posts about technology. 
+
+## Installation
+To use this application users must npm install <a href="https://www.npmjs.com/package/dotenv">dotenv</a>, <a href="https://www.npmjs.com/package/express">express</a>, 
+<a href="https://www.npmjs.com/package/bcrypt">bcrypt</a>, 
+<a href="https://www.npmjs.com/package/mysql2">mysql2</a>,
+<a href="https://www.npmjs.com/package/express-session">Express Session</a>, 
+<a href="https://sequelize.org/docs/v6/getting-started/">Sequelize</a>,
+<a href="https://www.npmjs.com/package/connect-session-sequelize">Connect Session Sequelize</a>, and
+<a href="https://www.npmjs.com/package/express-handlebars">Express Handlebars</a>,
+
+
+## Usage
+Users will create profiles and posts about technology.
+
+## Screenshot
+<img src="public\tekBLAHg.jpg" />
+
 ## Your Task
 
 Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
