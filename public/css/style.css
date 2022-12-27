@@ -52,6 +52,23 @@ nav {
     justify-content: center;
 }
 
+#exampleFormControlInput1 {
+  max-width: 300px;
+}
+
+#exampleFormControlTextarea1 {
+  width: 600px;
+  height: 200px
+}
+#createBlog {
+  background-color: #2d3e50;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  max-width: 60%;
+  color: #d9e9e8;
+}
+
 #hiddenPosts {
 display: flex;
 justify-content: center;

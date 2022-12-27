@@ -1,43 +1,82 @@
- {{#if logged_in}}
-    <center>
-      <section id="hiddenPosts">
-<div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header"></div>
-  <div class="card-body">
-    <h5 class="card-title">The top five frameworks to make you appear taller.</h5>
-    <p class="card-text">Time and time again programmers tell me the same thin.....</p>
-    <a class="blogLink" href="#">Continue reading</a>
-  </div>
-</div>
+{{#if logged_in}}
+  <center>
+    <section id="hiddenPosts">
+      <div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h5 class="card-title">The top five frameworks to make you appear
+            taller.</h5>
+          <p class="card-text">Time and time again programmers tell me the same
+            thin.....</p>
+            <h5 class="card-text">July 7th, 2022</h5>
+        </div>
+      </div>
 
-<div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header"></div>
-  <div class="card-body">
-    <h5 class="card-title">ES-QUE-EL vs Sequel: The debate is settled. </h5>
-    <p class="card-text">Why do people who say sqirrel smell like wet gara.....</p>
-    <a class="blogLink" href="#">Continue reading</a>
-  </div>
-</div>
+      <div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h5 class="card-title">ES-QUE-EL vs Sequel: The debate is settled.
+          </h5>
+          <p class="card-text">Why do people who say sqirrel smell like wet
+            gara.....</p>
+            <h5 class="card-text">August 25th, 2022</h5>
+        </div>
+      </div>
 
-<div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header"></div>
-  <div class="card-body">
-    <h5 class="card-title">Awesome Christmas gifts for Programmers 2022</h5>
-    <p class="card-text">New for 2022! blueblocker contacts are setti.....</p>
-    <a class="blogLink" href="#">Continue reading</a>
-  </div>
-</div>
+      <div id="blogz" class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h5 class="card-title">Awesome Christmas gifts for Programmers 2022</h5>
+          <p class="card-text">New for 2022! blueblocker contacts are setti.....</p>
+          <h5 class="card-text">September 3rd, 2022</h5>
+        </div>
+      </div>
 
+      {{#each posts}}
+        <div
+          id="blogz"
+          class="card text-bg-light mb-3"
+          style="max-width: 18rem;"
+        >
+          <div class="card-header"></div>
+          <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+            <p class="card-text">{{post.content}}</p>
+            <h6 class="card-text">{{post.date_created}}</h6>
+          </div>
+        </div>
+      {{/each}}
 
+    </section>
 
+    <form id="createBlog">
+      <h4>Create blog post</h4>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <br>
+        <input
+          class="form-control"
+          id="exampleFormControlInput1"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+        <br>
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button href="/posts" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+    </form>
+    <br>
+    <br>
+    <br>
 
+  </center>
 
-</section>
-
-
-
-</center>
-
-      <script src="/js/logout.js"></script>
-    {{/if}}
-
+  <script src="/js/logout.js"></script>
+{{/if}}
