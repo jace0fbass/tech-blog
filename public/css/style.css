@@ -58,7 +58,8 @@ nav {
 
 #exampleFormControlTextarea1 {
   width: 600px;
-  height: 200px
+  height: 200px;
+  margin-bottom: 5px;
 }
 #createBlog {
   background-color: #2d3e50;
@@ -67,6 +68,7 @@ nav {
   border-color: #000000;
   max-width: 60%;
   color: #d9e9e8;
+  padding-bottom: 10px;
 }
 
 #hiddenPosts {
