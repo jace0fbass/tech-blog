@@ -1,6 +1,6 @@
-const createPost = document.querySelector(".form-control")
+const createPostForm = document.querySelector(".form-control")
 console.log(createPost)
-const signUp = (event) => {
+const createPost = (event) => {
     event.preventDefault()
     
     const title = document.querySelector("#exampleFormControlInput1").value.trim()
@@ -23,4 +23,4 @@ const signUp = (event) => {
         }).catch(err => alert(err))
     }
 }
-createPost.addEventListener("submit", createPost)
+createPostForm.addEventListener("submit", createPost)
