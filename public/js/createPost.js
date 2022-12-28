@@ -16,11 +16,12 @@ const createPost = (event) => {
             headers: { "Content-Type": "application/json" },
         }).then((response) => {
             if (response.ok) {
-                document.location.replace("/posts")
+                document.appendChild("/posts")
             } else {
                 alert("Failed to create post.")
             }
         }).catch(err => alert(err))
     }
+    console.log(newPost)
 }
 createPostForm.addEventListener("submit", createPost)

@@ -10,7 +10,7 @@ router.get('/', withAuth, async (req, res) => {
       order: [['name', 'ASC']],
     });
 
-    const users = userData.map((project) => project.get({ plain: true }));
+    const users = userData.map((post) => post.get({ plain: true }));
 
     res.render('posts', {
       users,
@@ -32,7 +32,7 @@ router.get('/login', (req, res) => {
 })
 
 
-router.get('/', async (req, res) => {
+router.get('/posts', async (req, res) => {
   try {
     const allPosts = await Post.findAll()
     res.json(allPosts)
@@ -41,7 +41,7 @@ router.get('/', async (req, res) => {
   }
 })
 
-router.post('/', async (req, res) => {
+router.post('/posts', async (req, res) => {
   try {
     const result = await Post.create(req.body)
     res.json(result)
