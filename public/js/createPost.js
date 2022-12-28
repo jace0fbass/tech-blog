@@ -1,12 +1,12 @@
 const createPostForm = document.querySelector(".form-control")
-console.log(createPost)
+
 const createPost = (event) => {
     event.preventDefault()
     
     const title = document.querySelector("#exampleFormControlInput1").value.trim()
-
+    
     const content = document.querySelector("#exampleFormControlTextarea1").value.trim()
-
+    
     if (title && content) {
         let newPost = { title, content }
         console.log(newPost)
@@ -16,7 +16,7 @@ const createPost = (event) => {
             headers: { "Content-Type": "application/json" },
         }).then((response) => {
             if (response.ok) {
-                document.appendChild("/posts")
+                document.appendTo("/posts").location.replace("/posts")
             } else {
                 alert("Failed to create post.")
             }
