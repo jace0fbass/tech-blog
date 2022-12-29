@@ -8,7 +8,7 @@
             taller.</h5>
           <p class="card-text">Time and time again programmers tell me the same
             thin.....</p>
-            <h5 class="card-text">July 7th, 2022</h5>
+          <h5 class="card-text">July 7th, 2022</h5>
         </div>
       </div>
 
@@ -19,7 +19,7 @@
           </h5>
           <p class="card-text">Why do people who say sqirrel smell like wet
             gara.....</p>
-            <h5 class="card-text">August 25th, 2022</h5>
+          <h5 class="card-text">August 25th, 2022</h5>
         </div>
       </div>
 
@@ -31,24 +31,35 @@
           <h5 class="card-text">September 3rd, 2022</h5>
         </div>
       </div>
-
-      {{{post}}}
-
+      {{#each posts}}
+        <div
+          id="blogz"
+          class="card text-bg-light mb-3"
+          style="max-width: 18rem;"
+        >
+          <div class="card-header"></div>
+          <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <p class="card-text">{{content}}</p>
+            <h6 class="card-text">{{date_created}}</h6>
+          </div>
+        </div>
+      {{/each}}
     </section>
 
     <form id="createBlog">
       <h4>Create blog post</h4>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Title</label>
-        <br>
-        <input
-          class="form-control"
-          id="exampleFormControlInput1"
-        />
+        <br />
+        <input class="form-control" id="exampleFormControlInput1" />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Content</label>
-        <br>
+        <label
+          for="exampleFormControlTextarea1"
+          class="form-label"
+        >Content</label>
+        <br />
         <textarea
           class="form-control"
           id="exampleFormControlTextarea1"
@@ -56,14 +67,14 @@
         ></textarea>
       </div>
       <div class="form-group">
-        <button href="/posts" class="btn btn-primary" type="submit">Submit</button>
-    </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
     </form>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
 
   </center>
 
-  <script src="/js/createPost.js"></script>
 {{/if}}
+<script src="/js/createPost.js"></script>
